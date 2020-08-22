@@ -1,0 +1,26 @@
+html {
+    // font-family: $base-font;
+    font-size: 62.5%;
+    // color: $primary-color;
+}
+
+body {
+    // font-family: $body-font;
+    font-size: 2rem;
+    line-height: 32px;
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: 126px;
+}
+
+.header-nav ul {
+    text-transform: uppercase;
+    list-style-type: none;
+    a {
+        text-decoration: none;
+        color: $base-font;
+    }
+}
+
