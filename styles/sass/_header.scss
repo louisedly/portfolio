@@ -6,10 +6,10 @@
         url("./assets/header-image.jpg");
     // background: linear-gradient(45deg, #F3C5C3  20%, #BEDEDB 80%);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
+    // overflow: hidden;
     height: 100vh;
 }
 
@@ -66,6 +66,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: flex-end;
     cursor: pointer;
+    overflow: hidden;
 
     .nav {
         background: #000000;
@@ -116,13 +117,16 @@ h1 {
     padding: 5px 20px;
     position: fixed;
     z-index: 1;
+    display: block;
+    overflow: hidden;
 
 }
 
 .side-nav {
     padding: 5px 0 5px 0;
+    margin-top: 30px;
     background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
+    // position: fixed;
     z-index: 1;
     top: 40px;
     right: 0;
