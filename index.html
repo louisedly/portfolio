@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GOOGLE FONTS LINK -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
     <!-- FONT AWESOME LINK -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- AOS Animate on Scroll by MichalSnik -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Louise de Loyola | Front-end Developer</title>
 </head>
@@ -16,26 +19,43 @@
         <div class="header-container">
             <!-- START OF NAVIGATION -->
             <nav class="header-nav">
-                <ul class="nav">
-                    <li class="home-nav"><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-
-                <div>
-                    <i class="fas fa-bars"></i>
+                <div class="nav">
+                    <p class="logo home">L</p>
+                    <ul>
+                        <li><a class="home" href="#home">Home</a></li>
+                        <li><a class="about" href="#about">About</a></li>
+                        <li><a class="skills" href="#skills">Skills</a></li>
+                        <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
+                        <li><a class="contact" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
+
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <p class="logo home">L</p>
+                </div>
+
+                <div class="side-nav" style="display:none">
+                    <ul>
+                        <li><a class="home" href="#home">Home</a></li>
+                        <li><a class="about" href="#about">About</a></li>
+                        <li><a class="skills" href="#skills">Skills</a></li>
+                        <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
+                        <li><a class="contact" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
             </nav>
             <!-- END OF NAVIGATION -->
 
-            <div>
-                <h1>Hi, I'm Louise.</h1>
-                <h3>A Front-end Developer</h3>
+            <div class="greeting-container">
+                <p>Hi, my name is</p>
+                <h1 class="track-in">Louise <span class="color">de Loyola</span></h1>
+                <h2><span class="color">I'm a </span>Front-end Developer.</h2>
             </div>
 
-            <div>
-                <i class="fas fa-angle-double-down"></i>
+            <div class="down-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </header>
@@ -43,8 +63,165 @@
 
     <!-- START OF MAIN -->
     <main>
-        <section>
+        <section class="wrapper">
+            <div class="about-me-section">
+                <div class="about-me-texts">
+                    <h3 class="title">About Me /<h3>
+                    <p>Hello there! I'm a recent graduate of Juno College's Web Development Immersive Bootcamp. I previously worked as a security analyst and has a background in technical support. When I'm not coding, you'll find me reading fictional books or liking photos of puppies on social media.</p>
+                    <br>
+                    <p>I look forward to joining a team that aims to create useful and creative apps and will also help me grow my front-end skills!</p>
+                </div>
+                <div class="image-container">
+                    <img src="./styles/assets/photo.png" alt="A photo of the developer's site wearing a green shirt.">
+                </div>
+            </div>
+        </section>
 
+        <section class="wrapper">
+            <div class="skills-section" data-aos="fade-up" data-aos-duration="1500">
+                <h3 class="title"> Skills /</h3>
+                <div class="skills-icons">
+                    <ul>
+                        <li><img src="./styles/assets/html5.svg" alt="HTML5 icon">HTML5</li>
+                        <li><img src="./styles/assets/css3.svg" alt="CSS3 icon">CSS3</li>
+                        <li><img src="./styles/assets/sass.svg" alt="Sass icon">Sass</li>
+                        <li><img src="./styles/assets/js.svg" alt="javascript icon">Javascript</li>
+                        <li><img src="./styles/assets/jquery.svg" alt="jquery icon">jQuery</li>
+                        <li><img src="./styles/assets/react.svg" alt="react icon">React</li>
+                        <li><img src="./styles/assets/firebase.svg" alt="firebase icon">Firebase</li>
+                        <li><img src="./styles/assets/github.svg" alt="github or git icon">Git</li>
+                        <li><img src="./styles/assets/responsive-design.svg" alt="multiple devices icon">Responsive Design</li>
+                        <li><img src="./styles/assets/accessibility.svg" alt="accessibility icon">Accessibility</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="projects-section">
+                <h3 class="title">Projects /</h3>
+                <div class="projects-container">
+                    <ul>
+                        <li>
+                            <div class="project-five-overlay" data-aos="fade-right" data-aos-duration="500">
+                                <img src="./styles/assets/project-five.png" alt="mockup photo of book finder app as seen on a macbook and iphone device">
+                                <div class="project-five-content">
+                                    <h4>Book Finder</h4>
+                                    <p>Find your favourite book! A react app made using Google Books Api. In progress, to be updated with firebase functionality.</p>
+                                    <div class="tools-used">
+                                        <ul>
+                                            <li><img src="./styles/assets/html5.svg" alt="HTML5 icon">HTML5</li>
+                                            <li><img src="./styles/assets/css3.svg" alt="CSS3 icon">CSS3</li>
+                                            <li><img src="./styles/assets/react.svg" alt="react icon">React</li>
+                                            <li><img src="./styles/assets/responsive-design.svg" alt="multiple devices icon">Responsive</li>
+                                        </ul>
+                                    </div>
+                                    <a href="https://louisedly.github.io/book-search-app/" target="_blank">View Live</a>
+                                    <a href="https://github.com/louisedly/book-search-app" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="project-six-overlay">
+                                <img src="./styles/assets/project-six.png" alt="">
+                                <div class="project-six-content">
+                                    <h4>Out of Context Movie Spoiler</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, dolor.</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quidem?</p>
+                                    <a href="" target="_blank">View Live</a>
+                                    <a href="" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="project-four-overlay" data-aos="fade-left" data-aos-duration="500">
+                                <img src="./styles/assets/project-four.png" alt="mockup photo of flixbox app as seen on a macbook and iphone device">
+                                <div class="project-four-content">
+                                    <h4>flixBox.</h4>
+                                    <p>What to watch next? A movie app that let's you search and find info about any movie. Built as a paired programming project.</p>
+                                    <div class="tools-used">
+                                        <ul>
+                                            <li><img src="./styles/assets/html5.svg" alt="HTML5 icon">HTML5</li>
+                                            <li><img src="./styles/assets/css3.svg" alt="CSS3 icon">CSS3</li>
+                                            <li><img src="./styles/assets/sass.svg" alt="Sass icon">Sass</li>
+                                            <li><img src="./styles/assets/jquery.svg" alt="jquery icon">jQuery</li>
+                                            <li><img src="./styles/assets/responsive-design.svg" alt="multiple devices icon">Responsive</li>
+                                        </ul>
+                                    </div>
+                                    <a href="https://flixboxco.github.io/claytonPunoLouiseDeLoyolaProjectFour/" target="_blank">View Live</a>
+                                    <a href="https://github.com/flixBoxCo/claytonPunoLouiseDeLoyolaProjectFour" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="project-three-overlay">
+                                <img src="./styles/assets/project-three.png" alt="">
+                                <div class="project-three-content">
+                                    <h4>Zombie Quiz</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, dolor.</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quidem?</p>
+                                    <a href="" target="_blank">View Live</a>
+                                    <a href="" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="project-two-overlay" data-aos="fade-up" data-aos-duration="500">
+                                <img src="./styles/assets/project-two.png" alt="mockup photo of Under the Sea site as seen on an iMac and iphone device">
+                                <div class="project-two-content">
+                                    <h4>Under the Sea</h4>
+                                    <p>A multi-page PSD conversion site made using design files from client brief. Fully responsive across multiple devices.</p>
+                                    <div class="tools-used">
+                                        <ul>
+                                            <li><img src="./styles/assets/html5.svg" alt="HTML5 icon">HTML5</li>
+                                            <li><img src="./styles/assets/css3.svg" alt="CSS3 icon">CSS3</li>
+                                            <li><img src="./styles/assets/responsive-design.svg" alt="multiple devices icon">Responsive</li>
+                                            <li><img src="./styles/assets/accessibility.svg" alt="accessibility icon">Accessibility</li>
+                                        </ul>
+                                    </div>
+                                    <a href="https://louisedly.github.io/louise-deloyola-project-two/" target="_blank">View Live</a>
+                                    <a href="https://github.com/louisedly/louise-deloyola-project-two" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="contact-section">
+                <h3 class="title">Contact /</h3>
+                <div class="form">
+                    <form action="https://formspree.io/moqkojrq" method="POST">
+                        <label>
+                            <input class="input" type="text" name="name" placeholder="Name:" required>
+                        </label>
+                        <label>
+                            <input class="input" type="email" name="_replyto" placeholder="Email:" required>
+                        </label>
+                        <label>
+                            <textarea name="message" placeholder="Hello! Let's get in touch! 😊" rows="5" required></textarea>
+                        </label>
+                        <input class="submit" type="submit" value="Send">
+                    </form>
+                </div>
+
+                <div class="social-links">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/kriziadeloyola1/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/louisedly" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        <li><a href="https://twitter.com/louisedly_" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="mailto:louise.deloyola@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="back-to-top" data-aos="fade-up" data-aos-duration="1200">
+                    <i class="fas fa-chevron-up">
+                        <p>Back to Top</p>
+                    </i>
+                </div> -->
+            </div>
         </section>
 
     </main>
@@ -52,9 +229,13 @@
 
     <!-- START OF FOOTER -->
     <footer>
-        <p>footer</p>
+        <p>Louise de Loyola © 2020</p>
     </footer>
     <!-- END OF FOOTER -->
     
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <!-- AOS Animate on Scroll by MichalSnik -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

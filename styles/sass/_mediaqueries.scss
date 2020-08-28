@@ -1,0 +1,19 @@
+// Responsiveness
+
+@media (min-width: 940px) and (max-width: 1600px) {
+    .hamburger-menu,
+    .side-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 939px) {
+
+    .greeting-container {
+    margin-top: 250px;
+    }
+
+    .nav {
+    display: none;
+    }
+}
