@@ -387,7 +387,6 @@ form label,
 .header-container {
   background-image: url("./assets/header-image.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
