@@ -214,7 +214,7 @@
 
 // Mobile devices
 
-@media (max-width: 375) {
+@media (max-width: 375px) {
 
     .wrapper {
         width: 100%;
@@ -224,7 +224,7 @@
         font-size: 55%;
     }
     .greeting-container {
-    margin-top: 150px;
+        margin-top: 150px;
     }   
 
 }

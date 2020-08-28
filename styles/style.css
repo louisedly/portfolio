@@ -1119,7 +1119,7 @@ footer {
   }
 }
 
-@media (max-width: 375) {
+@media (max-width: 375px) {
   .wrapper {
     width: 100%;
   }
