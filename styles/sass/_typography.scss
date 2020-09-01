@@ -83,9 +83,18 @@ form label,
     font-size: 1rem;
 }
 
+.greeting-container p {
+    text-transform: uppercase;
+}
+
+.about-me-section p {
+    font-size: 1.7rem;
+}
+
 .about-me-texts p {
     text-align: left;
     letter-spacing: 2px;
+    // text-transform: uppercase;
 }
 
 .skills-section {
@@ -132,4 +141,8 @@ form label,
     display: inline-block;
     background-color: rgba(84, 38, 45,0.8);
     }
+}
+
+.contact-me p {
+    text-align: left;
 }

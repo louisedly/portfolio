@@ -43,9 +43,9 @@ portfolio.eventListener = function () {
         portfolio.scroll(".header");
     });
 
-    // $('.back-to-top').on('click', function () {
-    //     portfolio.scroll("header");
-    // });
+    $('.back-to-top').on('click', function () {
+        portfolio.scroll("header");
+    });
 }
 
 // Smooth scroll 

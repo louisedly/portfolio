@@ -1,6 +1,6 @@
 // Responsiveness
 
-@media (min-width: 940px) and (max-width: 1600px) {
+@media (min-width: 940px) and (max-width: 2600px) {
     .hamburger-menu,
     .side-nav {
         display: none;
@@ -9,7 +9,7 @@
 
 @media (max-width: 1200px) {
     .about-me-section p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 29px;
     }
 
@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1060px) {
     .skills-section,
     .projects-section,
     .contact-section {
@@ -55,6 +55,21 @@
     }
 }
 
+@media (max-width: 833px) {
+
+    .contact-me {
+        justify-content: center;
+    }
+
+    .contact-me p {
+        text-align: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 800px) {
 
     .about-me-section {
@@ -68,8 +83,8 @@
     }
 
     .image-container {
-        padding-top: 0;
-        height: 250px;
+        // padding-top: 0;
+        height: 280px;
     }
 }
 
@@ -216,15 +231,28 @@
 
 @media (max-width: 375px) {
 
+    .header-container {
+    background: linear-gradient(45deg, #F3C5C3  20%, #BEDEDB 80%);
+    }
+
     .wrapper {
         width: 100%;
     }
-
-    html {
-        font-size: 45%;
+    
+    h1 {
+        padding-bottom: 30px;
     }
+
+    // html {
+    //     font-size: 45%;
+    // }
+
     .greeting-container {
-        margin-top: 150px;
+        margin-top: 180px;
+    }
+
+    .about-me-texts p {
+        text-align: center;
     }
 
     .project-five-overlay,
@@ -234,6 +262,10 @@
     .project-two-overlay {
         width: 300px;
         height: 250px;
+    }
+
+    .back-to-top i {
+        top: -40px;
     }
 
 }

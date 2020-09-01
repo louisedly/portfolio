@@ -310,6 +310,14 @@ form label,
   font-size: 1rem;
 }
 
+.greeting-container p {
+  text-transform: uppercase;
+}
+
+.about-me-section p {
+  font-size: 1.7rem;
+}
+
 .about-me-texts p {
   text-align: left;
   letter-spacing: 2px;
@@ -382,6 +390,10 @@ form label,
   border-radius: 5px;
   display: inline-block;
   background-color: rgba(84, 38, 45, 0.8);
+}
+
+.contact-me p {
+  text-align: left;
 }
 
 .header-container {
@@ -522,7 +534,6 @@ h1 {
   top: 40px;
   right: 0;
   overflow: hidden;
-  height: 26%;
   width: 100%;
 }
 
@@ -653,7 +664,12 @@ main {
   background-color: #FFFAF0;
 }
 
+.about-me-title {
+  text-align: left;
+}
+
 .about-me-texts {
+  padding-top: 75px;
   padding-right: 30px;
   width: 60%;
 }
@@ -662,12 +678,13 @@ main {
   display: inline-block;
   -webkit-box-shadow: 20px 20px 20px 10px #fce0da;
           box-shadow: 20px 20px 20px 10px #fce0da;
+  margin: 10px 0;
 }
 
 .image-container {
   width: 200px;
-  height: 300px;
-  padding-top: 50px;
+  height: 290px;
+  padding-top: 40px;
 }
 
 .image-container img {
@@ -687,6 +704,13 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.about-me-section,
+.skills-section,
+.projects-section,
+.contact-section {
+  margin: 35px 10px;
 }
 
 .skills-icons ul,
@@ -794,7 +818,7 @@ main {
   height: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(21, 25, 40, 0.9);
   padding: 5px 10px;
   border-radius: 20px;
 }
@@ -836,25 +860,45 @@ main {
 }
 
 .contact-section {
-  padding: 10px 140px;
-  margin: 35px 0;
+  padding: 40px 140px;
   -webkit-box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1);
           box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1);
   border-radius: 20px;
   background-color: #FFFAF0;
 }
 
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.contact-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 20px;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 20px;
 }
 
 form {
-  width: 60%;
+  width: 100%;
 }
 
 label {
@@ -899,10 +943,11 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 20px 0 5px 0;
+  padding-left: 0;
 }
 
 .social-links ul a {
-  padding: 30px;
+  padding: 20px 40px 20px 0;
   text-decoration: none;
   color: #112d4e;
   font-size: 3.5rem;
@@ -914,9 +959,8 @@ textarea {
 
 .back-to-top i {
   position: absolute;
-  top: 0;
+  top: -20px;
   right: 0;
-  margin: 0 auto;
 }
 
 footer {
@@ -924,7 +968,7 @@ footer {
   background: linear-gradient(45deg, #F3F7F7 40%, #FFE4E1 60%);
 }
 
-@media (min-width: 940px) and (max-width: 1600px) {
+@media (min-width: 940px) and (max-width: 2600px) {
   .hamburger-menu,
   .side-nav {
     display: none;
@@ -933,7 +977,7 @@ footer {
 
 @media (max-width: 1200px) {
   .about-me-section p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 29px;
   }
   .project-five-overlay,
@@ -962,7 +1006,7 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1060px) {
   .skills-section,
   .projects-section,
   .contact-section {
@@ -976,6 +1020,23 @@ footer {
   }
   .nav {
     display: none;
+  }
+}
+
+@media (max-width: 833px) {
+  .contact-me {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-me p {
+    text-align: center;
+  }
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -996,8 +1057,7 @@ footer {
     width: 100%;
   }
   .image-container {
-    padding-top: 0;
-    height: 250px;
+    height: 280px;
   }
 }
 
@@ -1119,14 +1179,20 @@ footer {
 }
 
 @media (max-width: 375px) {
+  .header-container {
+    background: linear-gradient(45deg, #F3C5C3 20%, #BEDEDB 80%);
+  }
   .wrapper {
     width: 100%;
   }
-  html {
-    font-size: 45%;
+  h1 {
+    padding-bottom: 30px;
   }
   .greeting-container {
-    margin-top: 150px;
+    margin-top: 180px;
+  }
+  .about-me-texts p {
+    text-align: center;
   }
   .project-five-overlay,
   .project-six-overlay,
@@ -1135,5 +1201,8 @@ footer {
   .project-two-overlay {
     width: 300px;
     height: 250px;
+  }
+  .back-to-top i {
+    top: -40px;
   }
 }

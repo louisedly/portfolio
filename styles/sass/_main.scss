@@ -26,7 +26,12 @@ main {
     background-color: #FFFAF0;
 }
 
+.about-me-title {
+    text-align: left;
+}
+
 .about-me-texts {
+    padding-top: 75px;
     padding-right: 30px;
     width: 60%;
 }
@@ -34,12 +39,13 @@ main {
 .title {
     display: inline-block;
     box-shadow: 20px 20px 20px 10px #fce0da;
+    margin: 10px 0;
 }
 
 .image-container {
     width: 200px;
-    height: 300px;
-    padding-top: 50px;
+    height: 290px;
+    padding-top: 40px;
 }
 
 .image-container img {
@@ -57,6 +63,13 @@ main {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.about-me-section,
+.skills-section,
+.projects-section,
+.contact-section {
+    margin: 35px 10px;
 }
 
 .skills-icons ul,
@@ -149,7 +162,7 @@ main {
     width: 100%;
     height: 100%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(21, 25, 40, 0.9);
     padding: 5px 10px;
     border-radius: 20px;
 }
@@ -193,20 +206,34 @@ main {
 // CONTACT SECTION
 
 .contact-section {
-    padding: 10px 140px;
-    margin: 35px 0;
+    padding: 40px 140px;
     box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1);
     border-radius: 20px;
     background-color: #FFFAF0;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    padding: 20px;
+}
+
 .form {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    flex-basis: 60%;
+    padding: 20px;
 }
 
 form {
-    width: 60%;
+    width: 100%;
 }
 
 label{
@@ -239,9 +266,10 @@ textarea {
     display: flex;
     justify-content: center;
     margin: 20px 0 5px 0;
+    padding-left: 0;
 
     a {
-        padding: 30px;
+        padding: 20px 40px 20px 0;
         text-decoration: none;
         color: $font-color;
         font-size: 3.5rem;
@@ -253,7 +281,6 @@ textarea {
 
 .back-to-top i {
     position: absolute;
-    top: 0;
+    top: -20px;
     right: 0;
-    margin: 0 auto;
 }
