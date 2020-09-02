@@ -228,11 +228,10 @@
 }
 
 // Mobile devices
-
-@media (max-width: 375px) {
+@media (max-width: 414px) {
 
     .header-container {
-    background: linear-gradient(45deg, #F3C5C3  20%, #BEDEDB 80%);
+        background: linear-gradient(45deg, #F3F7F7  40%, #FFE4E1 60%);
     }
 
     .wrapper {
@@ -241,18 +240,33 @@
     
     h1 {
         padding-bottom: 30px;
+        font-size: 7rem;
+        span {
+            display: block;
+        }
     }
 
-    // html {
-    //     font-size: 45%;
-    // }
+    h2 {
+        font-size: 2rem;
+    }
 
     .greeting-container {
-        margin-top: 180px;
+        margin-top: 150px;
     }
 
-    .about-me-texts p {
-        text-align: center;
+    .down-arrow {
+        margin-top: 110px
+    }
+
+    .about-me-section,
+    .skills-section,
+    .projects-section,
+    .contact-section {
+        margin: 35px 0;
+    }
+
+    .about-me-texts {
+        padding-right: 0;
     }
 
     .project-five-overlay,
@@ -260,12 +274,91 @@
     .project-four-overlay,
     .project-three-overlay,
     .project-two-overlay {
-        width: 300px;
-        height: 250px;
+        width: 315px;
+        height: 226px;
     }
 
     .back-to-top i {
         top: -40px;
     }
 
+    .tools-used li {
+        margin: 0 7px;
+    }
+
+    .contact-me p {
+        // text-align: left;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    html {
+        font-size: 45%;
+    }
+
+    .greeting-container {
+        margin-top: 80px;
+    }
+
+    .about-me-section,
+    .skills-section,
+    .projects-section,
+    .contact-section {
+    margin: 35px 0;
+    }
+
+    .project-five-overlay,
+    .project-six-overlay,
+    .project-four-overlay,
+    .project-three-overlay,
+    .project-two-overlay {
+        width: 250px;
+        height: 170px;
+    }
+
+    .down-arrow {
+        margin-top: 100px
+    }
+
+    .tools-used {
+        display: none;
+    }
+
+    .project-five-content a,
+    .project-six-content a,
+    .project-four-content a,
+    .project-three-content a,
+    .project-two-content a {
+        margin: 10px 20px 20px 20px;
+    }
+}
+
+// For landscape mode 
+
+@media only screen
+    and (min-width : 568px) 
+    and (max-width : 896px)  
+    and (orientation: landscape) {
+
+    .header-container {
+        background: linear-gradient(45deg, #F3F7F7  40%, #FFE4E1 60%);
+    }
+
+    .greeting-container {
+        margin-top: 80px;
+    }
+
+    .down-arrow {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }

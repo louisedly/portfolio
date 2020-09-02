@@ -43,9 +43,14 @@ portfolio.eventListener = function () {
         portfolio.scroll(".header");
     });
 
-    $('.back-to-top').on('click', function () {
+    $('.back-to-top').on('click tap', function () {
         portfolio.scroll("header");
     });
+
+    // tap mobile
+    // $("project-five-overlay").on("tap", function () {
+    //     $(this).show();
+    // });
 }
 
 // Smooth scroll 
